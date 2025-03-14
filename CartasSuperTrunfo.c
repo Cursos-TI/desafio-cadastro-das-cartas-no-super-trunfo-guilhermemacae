@@ -38,15 +38,15 @@ int main() {
     printf("Digite a quantidade de pontos turísticos: ");
     scanf("%d", &turistico1);
     printf("\n");
-    
+
     // Exibição dos dados da primeira carta 
     
     printf("Carta 1: \n");
     printf("Código: %s \n", codigo1);
     printf("Cidade: %s \n", cidade1);
     printf("População: %d \n", populacao1);
-    printf("Área: %f \n", area1);
-    printf("PIB: %f \n", pib1);
+    printf("Área: %fkm2\n", area1);
+    printf("PIB: R$%f \n", pib1);
     printf("Pontos turísticos: %d \n", turistico1);
 
 
