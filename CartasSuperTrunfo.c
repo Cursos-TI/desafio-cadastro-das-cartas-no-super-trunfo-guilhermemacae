@@ -8,8 +8,9 @@
 
 int main() {
     printf("Desafio SuperTrunfo!\n");
-
+    printf("\n");
     // Criação das variáveis
+    char letra1, letra2;
     char codigo1[3], codigo2[3];
     char cidade1[10], cidade2[10];
     int populacao1, populacao2;
@@ -20,6 +21,11 @@ int main() {
     // Entrada de dados da primeira carta
 
     printf("Insira as informações da Primeira Carta:\n");
+    printf("\n");
+    
+    printf("Digite a letra de A a H: ");
+    scanf("%c", &letra1);
+
     printf("Digite o código: ");
     scanf("%s", &codigo1);
 
@@ -42,11 +48,11 @@ int main() {
     // Exibição dos dados da primeira carta 
     
     printf("Carta 1: \n");
-    printf("Código: %s \n", codigo1);
+    printf("Codigo da Carta1: %c%s \n", letra1,codigo1);
     printf("Cidade: %s \n", cidade1);
-    printf("População: %d \n", populacao1);
-    printf("Área: %fkm2\n", area1);
-    printf("PIB: R$%f \n", pib1);
+    printf("População: %d milhões \n", populacao1);
+    printf("Área: %.3f km2\n", area1);
+    printf("PIB: R$%.3f \n", pib1);
     printf("Pontos turísticos: %d \n", turistico1);
 
 
