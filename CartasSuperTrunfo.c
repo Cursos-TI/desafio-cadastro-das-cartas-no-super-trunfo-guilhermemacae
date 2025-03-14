@@ -11,8 +11,8 @@ int main() {
     printf("\n");
     // Criação das variáveis
     char letra1, letra2;
-    char codigo1[3], codigo2[3];
-    char cidade1[10], cidade2[10];
+    char codigo1[2], codigo2[2];
+    char cidade1[5], cidade2[5];
     int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
@@ -45,7 +45,7 @@ int main() {
     scanf("%d", &turistico1);
     printf("\n");
 
-    // Entrada de dados da segunda carta
+    //Entrada de dados da segunda carta
 
     printf("Insira as informações da Segunda Carta:\n");
     printf("\n");
@@ -71,7 +71,7 @@ int main() {
     printf("Digite a quantidade de pontos turísticos: ");
     scanf("%d", &turistico2);
     printf("\n");
-
+    
     // Exibição dos dados da primeira carta 
     
     printf("Carta 1: \n");
@@ -92,6 +92,7 @@ int main() {
     printf("Área: %.3f km2\n", area2);
     printf("PIB: R$%.3f \n", pib2);
     printf("Pontos turísticos: %d \n", turistico2);
+    
 
 
 
