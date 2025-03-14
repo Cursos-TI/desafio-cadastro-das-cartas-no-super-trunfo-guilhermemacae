@@ -8,6 +8,13 @@
 
 int main() {
     printf("Desafio SuperTrunfo!\n");
+    char codigo1[10], codigo2[10], cidade1[20], cidade2[20];
+    int populacao1, turistico1, populacao2, turistico2;
+    float area1, area2, PIB1, PIB2;
+
+    printf("Digite o código da primeira cidade: ");
+    scanf("%d", &codigo1);
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
