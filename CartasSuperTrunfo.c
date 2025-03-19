@@ -78,10 +78,12 @@ int main() {
     printf("PIB: %.0f Bilhões de reais\n", pib1);
     printf("Pontos turísticos: %d \n", turistico1);
     populacao1 *= 1000000;
-    densidade1 = (float) populacao1 / area1;                             //calculando a densidade
+    //calculando a densidade
+    densidade1 = (float) populacao1 / area1;
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
     pib1 *= 1000000000;
-    percap1 = (float) pib1 / populacao1;                                 //calculando o percapta
+    //calculando o percapta
+    percap1 = (float) pib1 / populacao1;                                 
     printf("PIB per Capita: R$%.2f reais\n", percap1);
     printf("\n");
 
@@ -95,10 +97,12 @@ int main() {
     printf("PIB: %.0f Bilhões de reais\n", pib2);
     printf("Pontos turísticos: %d \n", turistico2);
     populacao2 *= 1000000;
-    densidade2 = (float) populacao2 / area2;                           //calculando a densidade
+    //calculando a densidade
+    densidade2 = (float) populacao2 / area2;                           
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     pib2 *= 1000000000;
-    percap2 = (float) pib2 / populacao2;                               //calculando o percapta
+    //calculando o percapta
+    percap2 = (float) pib2 / populacao2;                               
     printf("PIB per Capita: R$%.2f reais\n", percap2);
     printf("\n");
     return 0;
