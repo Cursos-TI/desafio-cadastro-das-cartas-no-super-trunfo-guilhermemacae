@@ -14,6 +14,13 @@ int main() {
     float densidade1, densidade2;
     float percap1, percap2;
     float superPoder1, superPoder2;
+    int resultadoPopulacao;
+    int resultadoArea;
+    int resultadoPib;
+    int resultadoTuristico;
+    int resultadoDesidade;
+    int resultadoPercap;
+    int resultadoSuperpoder;
 
     // Entrada de dados da primeira carta
 
@@ -42,11 +49,11 @@ int main() {
     scanf("%d", &turistico1);
     
     populacao1 *= 1000000;
-    //calculando a densidade da primeira cidade
+    // Calculando a densidade da primeira cidade
     densidade1 = (float) populacao1 / area1;
     
     pib1 *= 1000000000;
-    //calculando o percapta da primeira cidade
+    // Calculando o percapta da primeira cidade
     percap1 = (float) pib1 / populacao1;
 
     // Calculo super poder carta 1
@@ -54,7 +61,7 @@ int main() {
     
     printf("\n");
 
-    //Entrada de dados da segunda carta
+    // Entrada de dados da segunda carta
 
     printf("Insira as informações da Segunda Carta:\n");
     printf("\n");
@@ -80,11 +87,11 @@ int main() {
     printf("Digite a quantidade de pontos turísticos: ");
     scanf("%d", &turistico2);
 
-    //calculando a densidade da segunda cidade
+    // Calculando a densidade da segunda cidade
     populacao2 *= 1000000;
     densidade2 = (float) populacao2 / area2;                           
         
-    //calculando o percapta da segunda cidade
+    // Calculando o percapta da segunda cidade
     pib2 *= 1000000000;
     percap2 = (float) pib2 / populacao2;
 
@@ -119,8 +126,29 @@ int main() {
     printf("PIB per Capita: R$%.2f reais\n", percap2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("Super Poder Cartra 2: %.0f \n", superPoder2);
-   
-    
+    printf("\n");
+
+    // Calculo para comparação
+    resultadoPopulacao = populacao1 > populacao2;
+    resultadoArea = area1 > area2;
+    resultadoPib = pib1 > pib2;
+    resultadoTuristico = turistico1 > turistico2;
+    resultadoDesidade = densidade1 > densidade2; // a carta com menor valor vence
+    resultadoPercap = percap1 > percap2;
+    resultadoSuperpoder = superPoder1 > superPoder2;
+
+    // Exibição da comparação
+
+    printf("Comparação dos resultados: \n");
+
+    printf("A maior população é da carta: %s\n", resultadoPopulacao ? cidade1 : cidade2);
+    printf("A maior área é da carta: %s\n", resultadoArea ? cidade1 : cidade2);
+    printf("O maior Pib é da carta: %s\n", resultadoPib ? cidade1 : cidade2);
+    printf("A maior quantidade de pontos turisticos é da carta: %s\n", resultadoTuristico ? cidade1 : cidade2);
+    printf("A maior densidade populacional é da carta: %s\n", resultadoDesidade ? cidade1 : cidade2);
+    printf("O maior Pib PerCapta é da carta: %s\n", resultadoPercap ? cidade1 : cidade2);
+    printf("O maior Super Poder é da carta: %s\n" , resultadoSuperpoder ? cidade1 : cidade2);
+
     printf("\n");
     return 0;
 }
