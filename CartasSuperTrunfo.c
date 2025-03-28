@@ -133,7 +133,7 @@ int main() {
     resultadoArea = area1 > area2;
     resultadoPib = pib1 > pib2;
     resultadoTuristico = turistico1 > turistico2;
-    resultadoDesidade = densidade1 > densidade2; // a carta com menor valor vence
+    resultadoDesidade = densidade1 < densidade2; // a carta com menor valor vence
     resultadoPercap = percap1 > percap2;
     resultadoSuperpoder = superPoder1 > superPoder2;
 
@@ -145,7 +145,7 @@ int main() {
     printf("A maior área é da carta: %s\n", resultadoArea ? cidade1 : cidade2);
     printf("O maior Pib é da carta: %s\n", resultadoPib ? cidade1 : cidade2);
     printf("A maior quantidade de pontos turisticos é da carta: %s\n", resultadoTuristico ? cidade1 : cidade2);
-    printf("A maior densidade populacional é da carta: %s\n", resultadoDesidade ? cidade1 : cidade2);
+    printf("A menor densidade demográfica é da carta: %s\n", resultadoDesidade ? cidade1 : cidade2);
     printf("O maior Pib PerCapta é da carta: %s\n", resultadoPercap ? cidade1 : cidade2);
     printf("O maior Super Poder é da carta: %s\n" , resultadoSuperpoder ? cidade1 : cidade2);
 
